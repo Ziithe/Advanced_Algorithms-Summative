@@ -3,7 +3,7 @@
 import sys
 
 class Graph:
-    #initilise dictionary of the nodes and weight
+    #initialise dictionary of the nodes and weight
     def __init__(self, n):
         self.size = n
         self.vertex = dict.fromkeys([n for n in range(n)])
@@ -24,7 +24,7 @@ class Graph:
         path[start] = 0
         #list of all visited edges
         visited = []
-        #initilise next edge from 0
+        #initialise next edge from 0
         next_edge = {start:0}
         
         while bool(next_edge):
